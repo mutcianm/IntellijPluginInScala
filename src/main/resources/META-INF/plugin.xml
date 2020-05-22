@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>org.example.IPEx1</id>
+    <name>IPDemo</name>
+    <vendor email="support@codersknife.com" url="http://www.codersknife.com">CodersKnife</vendor>
+
+    <description><![CDATA[
+    sample example to understand actions, messages  and dialogues
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <group id="IPDemoEg.Action" text="IPActionDemo" description="sample action">
+        <add-to-group group-id="MainMenu" anchor="last"/>
+        <action class="eg.action.MsgPopupAction" id="IPD.MsgPopupActionId" text="simple msg pop up"/>
+        </group>
+    </actions>
+
+</idea-plugin>
