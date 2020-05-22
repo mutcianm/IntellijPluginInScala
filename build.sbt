@@ -1,3 +1,4 @@
-name := "sample"
+lazy val IntellijPluginInScala = project.in(file("."))
+  .enablePlugins(SbtIdeaPlugin)
 
-enablePlugins(SbtIdeaPlugin)
+lazy val pluginRunner = createRunnerProject(IntellijPluginInScala)
